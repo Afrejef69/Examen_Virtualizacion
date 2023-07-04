@@ -17,7 +17,7 @@ class Table:
 
         dbcursor = mydb.cursor()
 
-        dbcursor.execute("SELECT * FROM tabla")
+        dbcursor.execute("SELECT * FROM personaje")
 
         dbtable = dbcursor.fetchall()
         return dbtable
@@ -33,7 +33,7 @@ class Table:
 
         dbcursor = mydb2.cursor()
 
-        dbcursor.execute("SELECT * FROM tabla2")
+        dbcursor.execute("SELECT * FROM poder")
 
         dbtable = dbcursor.fetchall()
         return dbtable
